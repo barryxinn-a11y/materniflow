@@ -52,7 +52,7 @@ depends = ["test-python", "test-node"]
 
 [tasks.cov-python]
 description = "🧪 Run Python code coverage tests with pytest"
-run = ".venv/bin/pytest tests_python -s --tb=native --cov=learn_materniflow --cov-report term-missing --cov-report html:htmlcov"
+run = ".venv/bin/pytest tests_python -s --tb=native --cov=materniflow --cov-report term-missing --cov-report html:htmlcov"
 
 [tasks.cov]
 description = "🧪 Run all code coverage tests (Python + Node.js)"

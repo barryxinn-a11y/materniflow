@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sqlalchemy as sa
-from learn_materniflow.api import one
+from materniflow.api import one
 
 engine = one.remote_postgres_engine
 stmt = sa.text("SELECT 1;")

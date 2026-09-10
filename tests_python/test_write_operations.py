@@ -18,8 +18,8 @@ from datetime import datetime, timedelta, UTC
 import pytest
 import sqlalchemy as sa
 
-from learn_materniflow.paths import path_enum
-from learn_materniflow.write_operations import (
+from materniflow.paths import path_enum
+from materniflow.write_operations import (
     assign_bed,
     update_prediction,
     create_alert,
@@ -498,10 +498,10 @@ class TestCreateOrder:
 
 
 if __name__ == "__main__":
-    from learn_materniflow.tests import run_cov_test
+    from materniflow.tests import run_cov_test
 
     run_cov_test(
         __file__,
-        "learn_materniflow.write_operations",
+        "materniflow.write_operations",
         preview=False,
     )

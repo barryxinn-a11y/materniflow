@@ -10,6 +10,22 @@ MaterniFlow is a full-stack AI Agent system designed to streamline obstetric war
 
 ---
 
+## Screenshots
+
+**Chat interface** — Suggested actions for common ward-management queries:
+
+![Chat Interface](docs/screenshots/chat-interface.png)
+
+**Write operation with reasoning** — The Agent queries state, executes a bed transfer, and verifies the result:
+
+![Write Operation Example](docs/screenshots/write-operation-example.png)
+
+**Agent self-description** — Full breakdown of queries and operations it can perform:
+
+![Agent Capabilities](docs/screenshots/agent-capabilities.png)
+
+---
+
 ## Key Features
 
 ### 🤖 AI Agent Capabilities

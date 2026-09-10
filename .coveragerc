@@ -2,12 +2,12 @@
 # for more info: https://coverage.readthedocs.io/en/latest/config.html
 [run]
 omit =
-    learn_materniflow/docs/*
-    learn_materniflow/tests/*
-    learn_materniflow/_version.py
-    learn_materniflow/paths.py
-    learn_materniflow/ai_sdk_adapter.py
-    learn_materniflow/multi_round_bedrock_runtime_chat_manager.py
+    materniflow/docs/*
+    materniflow/tests/*
+    materniflow/_version.py
+    materniflow/paths.py
+    materniflow/ai_sdk_adapter.py
+    materniflow/multi_round_bedrock_runtime_chat_manager.py
 
 [report]
 # Regexes for lines to exclude from consideration

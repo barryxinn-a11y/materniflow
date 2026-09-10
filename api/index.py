@@ -22,14 +22,14 @@ from fastapi import FastAPI, Request, Query
 from fastapi.responses import JSONResponse, StreamingResponse
 from vercel_ai_sdk_mate.api import RequestBody  # Parses AI SDK request format
 
-from learn_materniflow.utils import debug
-from learn_materniflow.ai_sdk_adapter import debug_ai_sdk_request
-from learn_materniflow.ai_sdk_adapter import ai_sdk_message_with_reasoning_generator
-from learn_materniflow.ai_sdk_adapter import get_last_user_message_text
-from learn_materniflow.ai_sdk_adapter import request_body_to_agent_history
-from learn_materniflow.one.api import one  # Main singleton with agent
-from learn_materniflow.agent_debugger import extract_text_from_messages
-from learn_materniflow.agent_debugger import parse_response_text
+from materniflow.utils import debug
+from materniflow.ai_sdk_adapter import debug_ai_sdk_request
+from materniflow.ai_sdk_adapter import ai_sdk_message_with_reasoning_generator
+from materniflow.ai_sdk_adapter import get_last_user_message_text
+from materniflow.ai_sdk_adapter import request_body_to_agent_history
+from materniflow.one.api import one  # Main singleton with agent
+from materniflow.agent_debugger import extract_text_from_messages
+from materniflow.agent_debugger import parse_response_text
 # fmt: on
 
 # Add project root to sys.path for module imports

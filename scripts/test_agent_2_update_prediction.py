@@ -10,11 +10,11 @@ Usage:
 """
 
 
-from learn_materniflow.one.api import one
-from learn_materniflow.tests.db_sync import reset_remote_database
-from learn_materniflow.agent_debugger import chat
-from learn_materniflow.agent_debugger import print_summary
-from learn_materniflow.agent_debugger import print_multi_turn_conversation_headers
+from materniflow.one.api import one
+from materniflow.tests.db_sync import reset_remote_database
+from materniflow.agent_debugger import chat
+from materniflow.agent_debugger import print_summary
+from materniflow.agent_debugger import print_multi_turn_conversation_headers
 
 
 def test_update_prediction_full(debug: bool = False):

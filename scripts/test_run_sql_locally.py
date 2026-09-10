@@ -2,8 +2,8 @@
 
 from pathlib import Path
 
-from learn_materniflow.sql_utils import execute_and_print_result
-from learn_materniflow.one.api import one
+from materniflow.sql_utils import execute_and_print_result
+from materniflow.one.api import one
 
 dir_here = Path(__file__).absolute().parent
 path_sql = dir_here / "test_run_sql_locally.sql"

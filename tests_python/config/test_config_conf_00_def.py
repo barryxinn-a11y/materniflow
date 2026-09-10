@@ -23,7 +23,7 @@ We don't need to test specific values because:
 The fact that `config` exists and is usable is the test.
 """
 
-from learn_materniflow.config.conf_00_def import Config
+from materniflow.config.conf_00_def import Config
 
 
 class TestConfig:
@@ -39,10 +39,10 @@ class TestConfig:
 
 
 if __name__ == "__main__":
-    from learn_materniflow.tests import run_cov_test
+    from materniflow.tests import run_cov_test
 
     run_cov_test(
         __file__,
-        "learn_materniflow.config.conf_00_def",
+        "materniflow.config.conf_00_def",
         preview=False,
     )

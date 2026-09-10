@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from learn_materniflow.one.one_00_main import one
+from materniflow.one.one_00_main import one
 
 
 def test_one():
@@ -8,10 +8,10 @@ def test_one():
 
 
 if __name__ == "__main__":
-    from learn_materniflow.tests import run_cov_test
+    from materniflow.tests import run_cov_test
 
     run_cov_test(
         __file__,
-        "learn_materniflow.one.one_00_main",
+        "materniflow.one.one_00_main",
         preview=False,
     )

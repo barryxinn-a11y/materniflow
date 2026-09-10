@@ -251,7 +251,7 @@ def reset_remote_database(verbose: bool = True) -> dict:
     Returns:
         dict: Summary of the sync operation.
     """
-    from learn_materniflow.one.api import one
+    from materniflow.one.api import one
 
     return sync_sqlite_to_postgres(
         local_engine=one.local_sqlite_engine,

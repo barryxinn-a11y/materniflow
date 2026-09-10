@@ -6,11 +6,11 @@ Test script for the BI Agent with Write Operations.
 This script tests multi-turn conversations with the agent.
 """
 
-from learn_materniflow.one.api import one
-from learn_materniflow.tests.db_sync import reset_remote_database
-from learn_materniflow.agent_debugger import chat
-from learn_materniflow.agent_debugger import print_summary
-from learn_materniflow.agent_debugger import print_multi_turn_conversation_headers
+from materniflow.one.api import one
+from materniflow.tests.db_sync import reset_remote_database
+from materniflow.agent_debugger import chat
+from materniflow.agent_debugger import print_summary
+from materniflow.agent_debugger import print_multi_turn_conversation_headers
 
 
 def test_assign_bed_full(debug: bool = False):

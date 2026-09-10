@@ -9,7 +9,7 @@ Usage:
 The file will be downloaded to: tmp/data.sqlite
 """
 
-from learn_materniflow.tests.db_helper import download_sqlite_db
+from materniflow.tests.db_helper import download_sqlite_db
 
 if __name__ == "__main__":
     download_sqlite_db()

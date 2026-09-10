@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import fire
-from learn_materniflow.sql_utils import execute_and_print_result
-from learn_materniflow.one.api import one
+from materniflow.sql_utils import execute_and_print_result
+from materniflow.one.api import one
 
 
 def main(sql: str):

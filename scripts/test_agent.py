@@ -9,7 +9,7 @@ Usage:
 Change the `request` variable at the bottom to test different queries.
 """
 
-from learn_materniflow.one.api import one
+from materniflow.one.api import one
 
 # =============================================================================
 # Test Requests - Onboarding & System Understanding (1-3)

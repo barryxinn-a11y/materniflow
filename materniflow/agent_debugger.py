@@ -7,7 +7,7 @@ This module provides helper functions for debugging agent responses,
 extracting thinking process, and formatting multi-turn conversations.
 
 Usage:
-    from learn_materniflow.one.one_05_agent_debugger import chat, print_summary
+    from materniflow.one.one_05_agent_debugger import chat, print_summary
 
     agent = one.agent
     agent.messages.clear()
@@ -181,8 +181,8 @@ def chat(
         tuple[str, str]: (thinking_process, final_answer)
 
     Example:
-        from learn_materniflow.one.api import one
-        from learn_materniflow.one.one_05_agent_debugger import chat
+        from materniflow.one.api import one
+        from materniflow.one.one_05_agent_debugger import chat
 
         agent = one.agent
         agent.messages.clear()

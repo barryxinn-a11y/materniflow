@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from learn_materniflow.source_code import add_two
+from materniflow.source_code import add_two
 
 
 def test_add_two():
@@ -10,10 +10,10 @@ def test_add_two():
 
 
 if __name__ == "__main__":
-    from learn_materniflow.tests import run_cov_test
+    from materniflow.tests import run_cov_test
 
     run_cov_test(
         __file__,
-        "learn_materniflow.source_code",
+        "materniflow.source_code",
         preview=False,
     )

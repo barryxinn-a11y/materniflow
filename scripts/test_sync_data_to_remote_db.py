@@ -12,7 +12,7 @@ Usage:
     .venv/bin/python scripts/test_sync_data_to_remote_db.py
 """
 
-from learn_materniflow.tests.db_sync import reset_remote_database
+from materniflow.tests.db_sync import reset_remote_database
 
 
 def main():
