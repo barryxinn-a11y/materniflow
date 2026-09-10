@@ -1,0 +1,3 @@
+SELECT *
+FROM room
+LIMIT 5;

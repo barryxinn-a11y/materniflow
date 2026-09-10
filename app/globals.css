@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Font Variables - Medical Clean */
+  --font-figtree: "Figtree", sans-serif;
+  --font-noto-sans: "Noto Sans", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  /* Healthcare Color System */
+  --background: #ECFEFF;  /* cyan-50 */
+  --foreground: #164E63;  /* cyan-900 */
+  --surface: #FFFFFF;
+
+  /* Card */
+  --card: 189 94% 97%;
+  --card-foreground: 192 91% 24%;
+
+  /* Popover */
+  --popover: 0 0% 100%;
+  --popover-foreground: 192 91% 24%;
+
+  /* Primary (Medical Cyan) */
+  --primary: 189 94% 37%;
+  --primary-foreground: 0 0% 100%;
+
+  /* Secondary (Light Cyan) */
+  --secondary: 187 92% 69%;
+  --secondary-foreground: 192 91% 24%;
+
+  /* Muted */
+  --muted: 189 94% 94%;
+  --muted-foreground: 192 47% 38%;
+
+  /* Accent (Health Green) */
+  --accent: 160 84% 39%;
+  --accent-foreground: 0 0% 100%;
+
+  /* Destructive */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  /* Border & Input */
+  --border: 187 92% 75%;
+  --input: 189 94% 94%;
+  --ring: 160 84% 39%;
+
+  /* Chart Colors */
+  --chart-1: 189 94% 37%;
+  --chart-2: 160 84% 39%;
+  --chart-3: 187 92% 69%;
+  --chart-4: 43 74% 66%;
+  --chart-5: 27 87% 67%;
+
+  /* Radius - Soft rounded for medical */
+  --radius: 8px;
+
+  /* Sidebar */
+  --sidebar-background: 0 0% 100%;
+  --sidebar-foreground: 192 91% 24%;
+  --sidebar-primary: 189 94% 37%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 189 94% 94%;
+  --sidebar-accent-foreground: 192 91% 24%;
+  --sidebar-border: 187 92% 75%;
+  --sidebar-ring: 160 84% 39%;
+}
+
+.dark {
+  /* Dark Mode - Healthcare */
+  --background: #0C1821;
+  --foreground: #E0F2FE;
+  --surface: #0F2027;
+
+  /* Card */
+  --card: 200 50% 10%;
+  --card-foreground: 200 90% 94%;
+
+  /* Popover */
+  --popover: 200 50% 10%;
+  --popover-foreground: 200 90% 94%;
+
+  /* Primary (Medical Cyan) */
+  --primary: 187 92% 69%;
+  --primary-foreground: 200 50% 10%;
+
+  /* Secondary */
+  --secondary: 200 30% 20%;
+  --secondary-foreground: 200 90% 94%;
+
+  /* Muted */
+  --muted: 200 30% 15%;
+  --muted-foreground: 200 30% 60%;
+
+  /* Accent (Health Green) */
+  --accent: 160 84% 45%;
+  --accent-foreground: 200 50% 10%;
+
+  /* Destructive */
+  --destructive: 0 63% 50%;
+  --destructive-foreground: 0 0% 100%;
+
+  /* Border & Input */
+  --border: 200 30% 25%;
+  --input: 200 30% 15%;
+  --ring: 160 84% 45%;
+
+  /* Sidebar */
+  --sidebar-background: 200 50% 8%;
+  --sidebar-foreground: 200 90% 94%;
+  --sidebar-primary: 187 92% 69%;
+  --sidebar-primary-foreground: 200 50% 10%;
+  --sidebar-accent: 200 30% 20%;
+  --sidebar-accent-foreground: 200 90% 94%;
+  --sidebar-border: 200 30% 25%;
+  --sidebar-ring: 160 84% 45%;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: var(--font-noto-sans), var(--font-inter), sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-figtree), var(--font-inter), sans-serif;
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Medical Card - Soft rounded, subtle shadow */
+  .medical-card {
+    @apply bg-white dark:bg-slate-900 rounded-lg p-6;
+    @apply border border-cyan-200 dark:border-cyan-800;
+    @apply shadow-sm hover:shadow-md transition-shadow duration-200;
+    @apply cursor-pointer;
+  }
+
+  /* Medical Button - Primary */
+  .medical-button {
+    @apply bg-cyan-600 text-white;
+    @apply rounded-lg px-6 py-3 font-semibold;
+    @apply hover:bg-cyan-700 transition-colors duration-200 cursor-pointer;
+  }
+
+  /* Medical Button - Accent (Green) */
+  .medical-button-accent {
+    @apply bg-emerald-600 text-white;
+    @apply rounded-lg px-6 py-3 font-semibold;
+    @apply hover:bg-emerald-700 transition-colors duration-200 cursor-pointer;
+  }
+
+  /* Medical Navbar */
+  .medical-nav {
+    @apply bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm;
+    @apply border-b border-cyan-200 dark:border-cyan-800;
+  }
+
+  /* Glass Card (for chat) */
+  .glass-card {
+    @apply bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm;
+    @apply border border-cyan-200 dark:border-cyan-800 rounded-lg;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Accent underline - Medical green */
+  .accent-underline {
+    @apply relative inline-block;
+  }
+
+  .accent-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 bg-emerald-500 -z-10 rounded;
+  }
+}
+
+/* Custom scrollbar - Medical style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ECFEFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0891B2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #0C1821;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #22D3EE;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #10B981;
+}
